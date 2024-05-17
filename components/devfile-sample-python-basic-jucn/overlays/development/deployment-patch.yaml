@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-jucn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-wvvc-tenant/appstudio/devfile-sample-python-basic-jucn@sha256:53f2d93551bf5610d31c633fa9c2d32870bb9e01b688ad3e16d4b25701a2bede
+        name: my-python
+        resources: {}
+status: {}
